@@ -1,5 +1,5 @@
-title: Minimal theme
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Stefanos Angelidis
+description: Personal Homepage
+show_downloads: false
+google_analytics: UA-110211172-1
 theme: jekyll-theme-minimal
