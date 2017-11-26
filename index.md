@@ -8,6 +8,6 @@ My research focuses on neural models for document representation with applicatio
 
 <br/>
 ### [](#header-3)Publications
-**Multiple Instance Learning Networks for Fine-grained Sentiment Analysis**<rb/>
+**Multiple Instance Learning Networks for Fine-grained Sentiment Analysis.**<rb/>
 Stefanos Angelidis, Mirella Lapata. _To appear: Transactions of the Association for Computational Linguistics (TACL)._<br/>
 [ [arXiv](arXiv) ] [ [data](data) ] [ [code](code) ]
