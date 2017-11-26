@@ -28,6 +28,7 @@ h1 {
 
 h2 {
   color:#393939;
+  text-align: left;
 }
 
 h3, h4, h5, h6 {
@@ -41,7 +42,6 @@ a {
 
 a:hover, a:focus {
   color:#069;
-  font-weight: bold;
 }
 
 a small {
@@ -56,7 +56,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:770px;
   margin:0 auto;
 }
 
@@ -106,7 +106,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:165px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -173,7 +173,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:520px;
   float:right;
   padding-bottom:50px;
 }
@@ -211,7 +211,7 @@ footer {
   }
 
   header {
-    padding-right:320px;
+    padding-right:300px;
   }
 
   section {

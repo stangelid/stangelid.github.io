@@ -16,16 +16,20 @@
     <div class="wrapper">
       <header>
         <img class="img-circle" src="./images/avatar.jpg">
-        <a href="{{ site.github.url }}"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p><b>&#x2709;</b>&nbsp;<a href="mailto:s.angelidis@ed.ac.uk">s.angelidis@ed.ac.uk</a></p>
+        <p><b><a href="http://homepages.inf.ed.ac.uk/s1258635/cv-stefanos.pdf">CV</a></b></p>
+        <p>
+        Room 3.39<br/>
+        Informatics Forum<br/>
+        10 Crichton Street<br/>
+        Edinburgh, UK<br/>
+        EH8 9AB
+        </p>
       </header>
       <section>
-
       {{ content }}
-
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 

@@ -4,7 +4,8 @@
 @import "jekyll-theme-minimal";
 
 .img-circle {
-    border-radius: 50%;
-    width: 80%;
-    height: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    margin-bottom: 10px;
 }
