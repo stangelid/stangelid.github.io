@@ -13,7 +13,7 @@ Before my PhD, I obtained a MSc in Artificial Intelligence with distinction from
 ### [](#header-3)Publications and Presented Work
 **Multiple Instance Learning Networks for Fine-grained Sentiment Analysis.**
 Stefanos Angelidis, Mirella Lapata. _To appear: Transactions of the Association for Computational Linguistics (TACL)._<br/>
-[ [arXiv](arXiv) ] [ [data](data) ] [ [code](code) ]
+[ [arXiv](#) ] [ [data](#) ] [ [code](#) ]
 
 **Document Embeddings with Context Sampling.**
 Stefanos Angelidis, Victor Lavrenko, Mirella Lapata. _Language @ Edinburgh, June 2016._<br/>
