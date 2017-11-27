@@ -8,6 +8,8 @@ My research focuses on neural models for document representation with applicatio
 
 Before my PhD, I obtained a MSc in Artificial Intelligence with distinction from the University of Edinburgh. My MSc Thesis was supervised by Prof. [Victor Lavrenko](http://homepages.inf.ed.ac.uk/vlavrenk/). Previously, I acquired my undergraduate degree on Informatics and Telecommunucations from the National and Kapodestrian University of Athens.
 
+<hr>
+
 ### [](#header-3)Publications and Presented Work
 **Multiple Instance Learning Networks for Fine-grained Sentiment Analysis.**
 Stefanos Angelidis, Mirella Lapata. _To appear: Transactions of the Association for Computational Linguistics (TACL)._<br/>
