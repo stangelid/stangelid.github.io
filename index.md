@@ -19,6 +19,6 @@ Stefanos Angelidis, Mirella Lapata. _To appear: Transactions of the Association 
 Stefanos Angelidis, Victor Lavrenko, Mirella Lapata. _Language @ Edinburgh, June 2016._<br/>
 [ [poster](http://homepages.inf.ed.ac.uk/s1258635/poster-docemb.pdf) ]
 
-**Learning to Segment Web-Pages Using Repeat Analysis**
+**Learning to Segment Web-Pages Using Repeat Analysis.**
 Stefanos Angelidis. _MSc Thesis (Supervisor: Victor Lavrenko)._<br/>
 [ [pdf](http://homepages.inf.ed.ac.uk/s1258635/msc_thesis_stefanos.pdf) ]
