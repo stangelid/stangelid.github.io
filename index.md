@@ -6,7 +6,7 @@ I'm a PhD student at the [Institute for Language, Computation and Cognition](htt
 
 My research focuses on neural models for document representation with applications on sentiment analysis, summarization and information retrieval.
 
-Before my PhD, I obtained a MSc in Artificial Intelligence with distinction from the University of Edinburgh. My MSc Thesis was supervised by Prof. [Victor Lavrenko](http://homepages.inf.ed.ac.uk/vlavrenk/). I acquired my undergraduate degree on [Informatics and Telecommunucations](http://www.di.uoa.gr/eng) from the [National and Kapodestrian University of Athens](http://en.uoa.gr/).
+Before my PhD, I obtained a MSc in Artificial Intelligence with distinction from the University of Edinburgh. My MSc Thesis was supervised by Prof. [Victor Lavrenko](http://homepages.inf.ed.ac.uk/vlavrenk/). I received my undergraduate degree on [Informatics and Telecommunucations](http://www.di.uoa.gr/eng) from the [National and Kapodistrian University of Athens](http://en.uoa.gr/).
 
 <hr>
 
