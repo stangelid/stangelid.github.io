@@ -2,11 +2,11 @@
 layout: default
 ---
 
-I'm a PhD student at the [Institute for Language, Computation and Cognition](http://web.inf.ed.ac.uk/ilcc), [School of Informatics](https://www.ed.ac.uk/informatics/), [University of Edinburgh](http://www.ed.ac.uk/), working under the supervision of Prof. [Mirella Lapata](http://homepages.inf.ed.ac.uk/mlap/).
+I'm a PhD student at the [Institute for Language, Computation and Cognition](http://web.inf.ed.ac.uk/ilcc), [School of Informatics](https://www.ed.ac.uk/informatics/), [University of Edinburgh](http://www.ed.ac.uk/), working under the supervision of Prof. [Mirella Lapata](http://homepages.inf.ed.ac.uk/mlap/) and [Charles Sutton](http://homepages.inf.ed.ac.uk/csutton/).
 
 My research focuses on neural models for document representation with applications on sentiment analysis, summarization and information retrieval.
 
-Before my PhD, I obtained a MSc in Artificial Intelligence with distinction from the University of Edinburgh. My MSc Thesis was supervised by Prof. [Victor Lavrenko](http://homepages.inf.ed.ac.uk/vlavrenk/). Previously, I acquired my undergraduate degree on Informatics and Telecommunucations from the National and Kapodestrian University of Athens.
+Before my PhD, I obtained a MSc in Artificial Intelligence with distinction from the University of Edinburgh. My MSc Thesis was supervised by Prof. [Victor Lavrenko](http://homepages.inf.ed.ac.uk/vlavrenk/). I acquired my undergraduate degree on Informatics and Telecommunucations from the National and Kapodestrian University of Athens.
 
 <hr>
 
