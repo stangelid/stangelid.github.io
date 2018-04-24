@@ -1,6 +1,6 @@
 @article{angelidis18milnet,
   author = {Angelidis, Stefanos  and Lapata, Mirella },
-  title = {Multiple Instance Learning Networks for Fine-Grained Sentiment Analysis},
+  title = {{M}ultiple {I}nstance {L}earning {N}etworks for {F}ine-{G}rained {S}entiment {A}nalysis},
   journal = {Transactions of the Association for Computational Linguistics},
   volume = {6},
   year = {2018},
