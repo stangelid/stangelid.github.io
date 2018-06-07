@@ -34,15 +34,9 @@
   border-radius: 5px;
   width: 30%;
   position: relative;
-  left: -250px;
   transition: all 5s ease-in-out;
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
 .popup .close {
   position: absolute;
   top: 20px;
@@ -56,9 +50,11 @@
 .popup .close:hover {
   color: #06D85F;
 }
+
 .popup .content {
   max-height: 30%;
   overflow: auto;
+  font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media screen and (max-width: 700px){
