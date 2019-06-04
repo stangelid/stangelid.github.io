@@ -1,0 +1,11 @@
+@InProceedings{angelidis18summarizing,
+  author = 	"Angelidis, Stefanos
+		and Lapata, Mirella",
+  title = 	"Summarizing Opinions: Aspect Extraction Meets Sentiment Prediction and They Are Both Weakly Supervised",
+  booktitle = 	"Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+  year = 	"2018",
+  publisher = 	"Association for Computational Linguistics",
+  pages = 	"3675--3686",
+  location = 	"Brussels, Belgium",
+  url = 	"http://aclweb.org/anthology/D18-1403"
+}
