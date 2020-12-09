@@ -1,0 +1,149 @@
+
+\documentclass[11pt,a4,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+%\usepackage[style=authoryear, backend=bibtex]{biblatex}
+%\addbibresource{science.bib}                       
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2.9cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Stefanos}{Angelidis}
+%\title{Graduate Electrical Engineer}                              
+\address{1/7 McEwan Square}{EH3 8EN, Edinburgh}{}
+\phone[mobile]{+44~(0)7925 786717}
+%\phone[mobile]{(GR)+30~6948 238142}
+\email{stangelid@gmail.com}
+%\extrainfo{LinkedIn Profile: http://uk.linkedin.com/in/paraskevikourtza/}
+%\photo[64pt][0.4pt]{picture}                       
+%\quote{Motivated graduate electrical engineer with a specialised direction towards sustainable energy seeking an opportunity for a challenging entry-level position in the energy sector.}
+% in engineering \& consulting.}                                 
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume      ---------------------------------------------------------
+
+\makecvtitle
+
+%\vspace*{-0.4cm}
+\section{Work Experience}
+
+\cventry{Jun '19 -- Present}{Postdoctoral Research Associate}{\newline Institute for Language, Cognition and Computation}{\newline University of Edinburgh}{}{}{.}
+\cvitem{\textcolor{color2}{Advisor}}{Mirella Lapata}
+\cvitem{\textcolor{color2}{Collaboration with}}{Megagon Labs}
+
+\vspace*{-0.4cm}
+
+\subsection*{}
+
+\cventry{Oct '18 -- Apr '19}{Applied Scientist Intern}{Amazon CoreAI, Barcelona}{}{}{}{.}
+\cvitem{\textcolor{color2}{Project}}{Book Question Answering.}
+\cvitem{\textcolor{color2}{Supervisor}}{Lluís Màrquez}
+
+\section{Education}
+
+\cventry{May '14 -- Apr '19}{PhD in Informatics}{ \newline Institute for Language, Cognition and Computation}{ \newline University of Edinburgh}{}{}{.}
+
+\cvitem{\textcolor{color2}{Thesis}}{Weakly Supervised Sentiment Analysis and Opinion Extraction.}
+\cvitem{\textcolor{color2}{Supervisors}}{Mirella Lapata, Charles Sutton (Nov '15 -- Apr '19)}
+\vspace{-1mm}
+\cvitem{}{Victor Lavrenko (May '14 -- Oct '15)}
+
+\vspace*{-0.4cm}
+
+
+\subsection*{}
+
+\cventry{Sep '12 -- Aug '13}{MSc with Distinction in Artificial Intelligence}{}{ \newline University of Edinburgh}{}{}{.}
+
+\cvitem{\textcolor{color2}{Thesis}}{Learning to Segment Web-Pages Using Repeat Analysis.}
+\cvitem{\textcolor{color2}{Supervisor}}{Victor Lavrenko}
+
+\vspace*{-0.4cm}
+
+\subsection*{}
+
+\cventry{Sep '05 -- Jul '12}{BSc in Informatics and Telecommunications}{(2:1 honours)}{ \newline National and Kapodistrian University of Athens}{}{}{.}
+
+\cvitem{\textcolor{color2}{Thesis}}{Collaborative Filtering and Categorization of E-Mails via Classifier Sharing.}
+\cvitem{\textcolor{color2}{Supervisor}}{Panagiotis Stamatopoulos}
+
+\section{Selected Publications}
+
+\cvitem{\textcolor{color2}{Journal Papers}}{Stefanos Angelidis, Mirella Lapata. "Multiple Instance Learning Networks for Fine-grained Sentiment Analysis". \textit{In Transactions of the Association for Computational Linguistics, \mbox{Vol 6 (2018)}.}}
+
+\cvitem{\textcolor{color2}{Conference Papers}}{Yoshihiko Suhara, Xiaolan Wang, Stefanos Angelidis, Wang-Chiew Tan. "OpinionDigest: A Simple Framework for Opinion Summarization". \textit{ACL 2020.}}
+\cvitem{}{Stefanos Angelidis, Mirella Lapata. "Summarizing Opinions: Aspect Extraction Meets Sentiment Prediction and They Are Both Weakly Supervised". \textit{EMNLP 2018.}}
+
+%\cvitem{\textcolor{color2}{Workshops}}{Stefanos Angelidis, Victor Lavrenko, Mirella Lapata. "Document Embeddings with Context Sampling". \textit{Language @ Edinburgh, June 2016.}}
+\cvitem{\textcolor{color2}{Workshops}}{Stefanos Angelidis, Diego Marcheggiani, Lea Frermann, Roi Blanco and Lluís Màrquez. "Book QA: Stories of Challenges and Opportunities". \textit{MRQA 2019.}}
+
+%\cvitem{\textcolor{color2}{Talks}}{"Discourse-aware Neural Document Representations". \textit{Edinburgh NLP Group, November 2016.}}
+
+
+\section{Research Interests}
+
+\cvlistitem{Deep Learning for Natural Language Understanding and Generation.}
+\cvlistitem{Text Summarization, Opinion Mining, Question Answering.}
+\cvlistitem{Unsupervised and Weakly Supervised Learning.}
+\cvlistitem{Information Retrieval and Extraction.}
+
+\section{Coding Skills}
+
+\cvitem{\textcolor{color2}{Programming}}{Python, C/C++, Lua, Java, Shell scripting (bash), Matlab}
+\cvitem{\textcolor{color2}{Neural Networks}}{PyTorch, (lua)Torch, Theano}
+\cvitem{\textcolor{color2}{Web Technologies}}{HTML, CSS, JQuery, CGI}
+
+\section{Teaching Experience}
+
+\cventry{}{\textbf{Teaching Assistant}}{University of Edinburgh}{}{}{}{}{}
+\cvitem{2017}{Natural Language Understanding}
+\cvitem{2014--15}{Data Mining and Exploration}
+\cvitem{2014}{Probabilistic Modelling and Reasoning}
+
+\vspace{2mm}
+
+\cventry{}{Tutor / Demonstrator}{University of Edinburgh}{}{}{}{}{}
+\cvitem{2017}{Accelerated Natural Language Processing}
+\cvitem{2014--16}{Introductory Applied Machine Learning}
+\cvitem{2014--15}{Data Mining and Exploration}
+\cvitem{2014}{Informatics Research Proposal}
+
+\section{Peer Reviewing}
+
+\cvitem{2020}{ACL, EMNLP}
+\cvitem{2019}{ACL, NAACL, EMNLP, CoNLL}
+\cvitem{2018}{EMNLP, CoNLL}
+
+\section{Further Interests}
+
+\cvlistitem{Curious about everything science. Trying my best to lead a climate-friendly lifestyle.}
+\cvlistitem{Vinyl collector, bedroom DJ, amateur sound engineer.}
+\cvlistitem{Fermentation enthusiast.}
+
+\section{References}
+
+\cvlistitem{Mirella Lapata, \textit{Professor}, University of Edinburgh \hfill mlap@inf.ed.ac.uk}
+\cvlistitem{Lluís Màrquez, \textit{Principal Applied Scientist}, Amazon \hfill lluismv@amazon.com}
+\cvlistitem{Victor Lavrenko, \textit{Technical Lead}, Human Longevity, Inc. \hfill v.lavrenko@gmail.com}\vspace{-1mm}
+$\qquad\qquad\qquad\qquad\qquad\qquad\qquad\:\;\qquad$\textit{Lecturer}, University of Edinburgh (2008--15)
+
+\end{document}
+
+
