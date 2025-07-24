@@ -31,6 +31,17 @@
       {"name":"Stefanos Angelidis","description":"{{ site.long_description }}","author":"Stefanos Angelidis","@type":"WebSite","url":"https://stangelid.github.io/","image":"https://stangelid.github.io/images/avatar2.png","publisher":null,"headline":"Stefanos Angelidis","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}
     </script>
 
+    <script>
+        const user = 'dilegnats';
+        const domain = 'liamg';
+        const sufix = 'moc.';
+
+        const a = user.split("").reverse().join("");
+        const b = domain.split("").reverse().join("");
+        const c = suffix.split("").reverse().join("");
+        const lnk = `<a href="mailto:${a}@${b}${c}">${a}@${b}${c}</a>`;
+        document.getElementById('emllnk').innedHTML = lnk;
+    </script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -41,7 +52,8 @@
       <header>
         <img class="img-circle" src="./images/avatar2.png">
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <p class="addr">&#x2709;&nbsp;&#115;&#046;&#097;&#110;&#103;&#101;&#108;&#105;&#100;&#105;&#115;&#064;&#101;&#100;&#046;&#097;&#099;&#046;&#117;&#107;</p>
+        <p class="addr"><span id="emllnk"></span></p>
+        <!--<p class="addr">&#x2709;&nbsp;&#115;&#046;&#097;&#110;&#103;&#101;&#108;&#105;&#100;&#105;&#115;&#064;&#101;&#100;&#046;&#097;&#099;&#046;&#117;&#107;</p>-->
 <!--        <p>
         Room 4.29<br/>
         Informatics Forum<br/>
