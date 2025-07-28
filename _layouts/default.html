@@ -68,7 +68,7 @@
             const a = user.split("").reverse().join("");
             const b = domain.split("").reverse().join("");
             const c = suffix.split("").reverse().join("");
-            const lnk = `&#x2709;&nbsp;${a}@${b}${c}`;
+            const lnk = `${a}@${b}${c}`;
             // const lnk = `<a href="mailto:${a}@${b}${c}">&#x2709;&nbsp;${a}@${b}${c}</a>`;
             document.getElementById('emllnk').innerHTML = lnk;
         </script>
