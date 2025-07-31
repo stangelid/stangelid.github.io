@@ -80,9 +80,11 @@
         <script>
           const fadeImage = document.getElementById('fadeImage');
           const fadeContainer = document.getElementById('fadeContainer');
+          const textContainer = document.getElementById('textContainer');
 
           window.addEventListener('scroll', () => {
-            const rect = fadeContainer.getBoundingClientRect();
+            // const rect = fadeContainer.getBoundingClientRect();
+            const rect = textContainer.getBoundingClientRect();
             const windowHeight = window.innerHeight;
 
             console.log(rect);
@@ -105,7 +107,7 @@
         </script>
       </header>
 	  <!--googleon: snippet-->
-      <section>
+      <section id="textContainer">
       {{ content }}
       </section>
     </div>
