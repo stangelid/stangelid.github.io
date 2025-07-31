@@ -83,79 +83,35 @@
       {{ content }}
       </section>
       <script>
-          // const fadeImage = document.getElementById('fadeImage');
-          // const fadeContainer = document.getElementById('fadeContainer');
-          // const textContainer = document.getElementById('textContainer');
-
-          // const rect = textContainer.getBoundingClientRect();
-          // const windowHeight = window.innerHeight - rect.top;
-
-          // console.log(rect);
-          // console.log(windowHeight);
-
-          // const start = windowHeight;
-          // const end = 0;
-          // const visibleHeight = Math.max(0, windowHeight - rect.top);
-          // const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
-
-          // console.log(start);
-          // console.log(end);
-          // console.log(rect.top);
-          // console.log(rect.height);
-          // console.log(visibleHeight);
-          // console.log(fadeAmount);
+          const fadeImage = document.getElementById('fadeImage');
           const fadeContainer = document.getElementById('fadeContainer');
-          const rect = fadeContainer.getBoundingClientRect()
-          console.log(rect.width);
-          fadeContainer.style.height = rect.width + 'px';
-          console.log(rect.height);
-          console.log(document.getElementById('fadeContainer').getBoundingClientRect().height);
-          const scrollTop = window.scrollY;
-          const fadeStart = 0; // start fade at top
-          const fadeEnd = window.innerHeight; // fully faded in after 1 viewport height
-          const opacity = Math.min(1, Math.max(0, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
-          console.log(scrollTop);
-          console.log(fadeStart);
-          console.log(fadeEnd);
-          console.log(scrollTop - fadeStart);
-          console.log(fadeEnd - fadeStart);
-          console.log((scrollTop - fadeStart) / (fadeEnd - fadeStart));
-          console.log(opacity);
-          window.addEventListener('scroll', () => {
-            // const rect = fadeContainer.getBoundingClientRect();
+          const rect = fadeContainer.getBoundingClientRect();
+
+          function shouldFade() {
+            return window.innerWidth > 700;
+          }
+
+          function updateFade() {
+            if (!shouldFade()) {
+              // Reset to fully visible if fading is disabled
+              fadeImage.style.opacity = 1;
+              return;
+            }
+
+            const rect = fadeContainer.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            const visibleHeight = Math.max(0, windowHeight - rect.top);
+            const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
+
             const scrollTop = window.scrollY;
             const fadeStart = 0; // start fade at top
             const fadeEnd = window.innerHeight; // fully faded in after 1 viewport height
             const opacity = Math.min(1, Math.max(0, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
             fadeImage.style.opacity = opacity;
-
-            console.log(scrollTop);
-            console.log(fadeStart);
-            console.log(fadeEnd);
-            console.log(scrollTop - fadeStart);
-            console.log(fadeEnd - fadeStart);
-            console.log((scrollTop - fadeStart) / (fadeEnd - fadeStart));
-            console.log(opacity);
-            // const rect = textContainer.getBoundingClientRect();
-            // const windowHeight = window.innerHeight - rect.top;
-
-            // console.log(rect);
-            // console.log(windowHeight);
-
-            // const start = windowHeight;
-            // const end = 0;
-            // const visibleHeight = Math.max(0, windowHeight - rect.top);
-            // const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
-
-            // console.log(start);
-            // console.log(end);
-            // console.log(rect.top);
-            // console.log(rect.height);
-            // console.log(visibleHeight);
-            // console.log(fadeAmount);
-
-            // fadeImage.style.opacity = fadeAmount;
-          });
+          }
+          window.addEventListener('scroll', updateFade);
+          window.addEventListener('resize', updateFade); // Recalculate on resize
+          updateFade(); // Initial calculation
         </script>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
