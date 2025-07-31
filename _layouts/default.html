@@ -79,13 +79,18 @@
         <!-- <img class="img-circle" src="../images/jerry.jpg"> -->
         <script>
           const fadeImage = document.getElementById('fadeImage');
+          const fadeContainer = document.getElementById('fadeContainer');
 
           window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY;
-            const fadeStart = 0; // start fade at top
-            const fadeEnd = window.innerHeight; // fully faded in after 1 viewport height
-            const opacity = Math.min(1, Math.max(0, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
-            fadeImage.style.opacity = opacity;
+            const rect = fadeContainer.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            const start = windowHeight;
+            const end = 0;
+            const visibleHeight = Math.max(0, windowHeight - rect.top);
+            const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
+
+            fadeImage.style.opacity = fadeAmount;
           });
         </script>
       </header>

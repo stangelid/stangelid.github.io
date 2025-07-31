@@ -6,7 +6,7 @@
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 175px;
 }
 
 .img-circle {
@@ -34,8 +34,8 @@
 
 .img2 {
   background-image: url("../../images/jerry.jpg"); /* Replace with your image */
-  z-index: 1;
-  opacity: 1;
+  z-index: 2;
+  opacity: 0;
 }
 
 .overlay {
