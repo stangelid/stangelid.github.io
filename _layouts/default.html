@@ -92,9 +92,10 @@
           }
 
           function updateFade() {
+            fadeContainer.style.height = rect.width + 'px';
             if (!shouldFade()) {
               // Reset to fully visible if fading is disabled
-              fadeImage.style.opacity = 1;
+              fadeImage.style.opacity = 0;
               return;
             }
 
