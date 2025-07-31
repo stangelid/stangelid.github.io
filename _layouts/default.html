@@ -90,15 +90,16 @@
             return window.innerWidth > 700;
           }
 
-          function updateFade() {
+          function updateFade() {            
+            const rect = fadeContainer.getBoundingClientRect();
+            fadeContainer.style.height = rect.width + 'px';
+            
             if (!shouldFade()) {
               // Reset to fully visible if fading is disabled
               fadeImage.style.opacity = 0;
               return;
             }
 
-            const rect = fadeContainer.getBoundingClientRect();
-            fadeContainer.style.height = rect.width + 'px';
             const windowHeight = window.innerHeight;
             const visibleHeight = Math.max(0, windowHeight - rect.top);
             const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
