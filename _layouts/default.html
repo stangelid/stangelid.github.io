@@ -88,7 +88,7 @@
           const textContainer = document.getElementById('textContainer');
 
           const rect = textContainer.getBoundingClientRect();
-          const windowHeight = window.innerHeight;
+          const windowHeight = window.innerHeight - rect.top;
 
           console.log(rect);
           console.log(windowHeight);
@@ -108,7 +108,7 @@
           window.addEventListener('scroll', () => {
             // const rect = fadeContainer.getBoundingClientRect();
             const rect = textContainer.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
+            const windowHeight = window.innerHeight - rect.top;
 
             console.log(rect);
             console.log(windowHeight);
