@@ -87,6 +87,24 @@
           const fadeContainer = document.getElementById('fadeContainer');
           const textContainer = document.getElementById('textContainer');
 
+          const rect = textContainer.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+
+          console.log(rect);
+          console.log(windowHeight);
+
+          const start = windowHeight;
+          const end = 0;
+          const visibleHeight = Math.max(0, windowHeight - rect.top);
+          const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
+
+          console.log(start);
+          console.log(end);
+          console.log(rect.top);
+          console.log(rect.height);
+          console.log(visibleHeight);
+          console.log(fadeAmount);
+
           window.addEventListener('scroll', () => {
             // const rect = fadeContainer.getBoundingClientRect();
             const rect = textContainer.getBoundingClientRect();
