@@ -208,6 +208,10 @@ footer {
 
 @media print, screen and (max-width: 960px) {
 
+  .image2 {
+    opacity: 0 !important;
+  }
+
   div.wrapper {
     width:auto;
     margin:0;
@@ -242,6 +246,11 @@ footer {
 }
 
 @media print, screen and (max-width: 720px) {
+
+  .image2 {
+    opacity: 0 !important;
+  }
+
   body {
     word-wrap:break-word;
   }
@@ -260,6 +269,11 @@ footer {
 }
 
 @media print, screen and (max-width: 480px) {
+
+  .image2 {
+    opacity: 0 !important;
+  }
+  
   body {
     padding:15px;
   }
