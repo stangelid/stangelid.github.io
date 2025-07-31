@@ -106,7 +106,7 @@
           // console.log(fadeAmount);
           const fadeContainer = document.getElementById('fadeContainer');
           console.log(fadeContainer.style.width);
-          fadeContainer.setAttribute('style.height', fadeContainer.style.width);
+          fadeContainer.setAttribute('style.height', fadeContainer.getAttribute('style.width'));
           const scrollTop = window.scrollY;
           const fadeStart = 0; // start fade at top
           const fadeEnd = window.innerHeight; // fully faded in after 1 viewport height
