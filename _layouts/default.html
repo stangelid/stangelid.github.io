@@ -83,49 +83,73 @@
       {{ content }}
       </section>
       <script>
-          const fadeImage = document.getElementById('fadeImage');
-          const fadeContainer = document.getElementById('fadeContainer');
-          const textContainer = document.getElementById('textContainer');
+          // const fadeImage = document.getElementById('fadeImage');
+          // const fadeContainer = document.getElementById('fadeContainer');
+          // const textContainer = document.getElementById('textContainer');
 
-          const rect = textContainer.getBoundingClientRect();
-          const windowHeight = window.innerHeight - rect.top;
+          // const rect = textContainer.getBoundingClientRect();
+          // const windowHeight = window.innerHeight - rect.top;
 
-          console.log(rect);
-          console.log(windowHeight);
+          // console.log(rect);
+          // console.log(windowHeight);
 
-          const start = windowHeight;
-          const end = 0;
-          const visibleHeight = Math.max(0, windowHeight - rect.top);
-          const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
+          // const start = windowHeight;
+          // const end = 0;
+          // const visibleHeight = Math.max(0, windowHeight - rect.top);
+          // const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
 
-          console.log(start);
-          console.log(end);
-          console.log(rect.top);
-          console.log(rect.height);
-          console.log(visibleHeight);
-          console.log(fadeAmount);
+          // console.log(start);
+          // console.log(end);
+          // console.log(rect.top);
+          // console.log(rect.height);
+          // console.log(visibleHeight);
+          // console.log(fadeAmount);
 
+          const scrollTop = window.scrollY;
+          const fadeStart = 0; // start fade at top
+          const fadeEnd = window.innerHeight; // fully faded in after 1 viewport height
+          const opacity = Math.min(1, Math.max(0, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
+          consolt.log(scrollTop);
+          consolt.log(fadeStart);
+          consolt.log(fadeEnd);
+          consolt.log(scrollTop - fadeStart);
+          consolt.log(fadeEnd - fadeStart);
+          consolt.log((scrollTop - fadeStart) / (fadeEnd - fadeStart));
+          consolt.log(opacity);
           window.addEventListener('scroll', () => {
             // const rect = fadeContainer.getBoundingClientRect();
-            const rect = textContainer.getBoundingClientRect();
-            const windowHeight = window.innerHeight - rect.top;
+            const scrollTop = window.scrollY;
+            const fadeStart = 0; // start fade at top
+            const fadeEnd = window.innerHeight; // fully faded in after 1 viewport height
+            const opacity = Math.min(1, Math.max(0, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
+            fadeImage.style.opacity = opacity;
 
-            console.log(rect);
-            console.log(windowHeight);
+            consolt.log(scrollTop);
+            consolt.log(fadeStart);
+            consolt.log(fadeEnd);
+            consolt.log(scrollTop - fadeStart);
+            consolt.log(fadeEnd - fadeStart);
+            consolt.log((scrollTop - fadeStart) / (fadeEnd - fadeStart));
+            consolt.log(opacity);
+            // const rect = textContainer.getBoundingClientRect();
+            // const windowHeight = window.innerHeight - rect.top;
 
-            const start = windowHeight;
-            const end = 0;
-            const visibleHeight = Math.max(0, windowHeight - rect.top);
-            const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
+            // console.log(rect);
+            // console.log(windowHeight);
 
-            console.log(start);
-            console.log(end);
-            console.log(rect.top);
-            console.log(rect.height);
-            console.log(visibleHeight);
-            console.log(fadeAmount);
+            // const start = windowHeight;
+            // const end = 0;
+            // const visibleHeight = Math.max(0, windowHeight - rect.top);
+            // const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
 
-            fadeImage.style.opacity = fadeAmount;
+            // console.log(start);
+            // console.log(end);
+            // console.log(rect.top);
+            // console.log(rect.height);
+            // console.log(visibleHeight);
+            // console.log(fadeAmount);
+
+            // fadeImage.style.opacity = fadeAmount;
           });
         </script>
     </div>
