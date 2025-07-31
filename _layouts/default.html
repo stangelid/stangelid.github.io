@@ -77,7 +77,12 @@
         </p>
         <p class="link"><b><a target="_blank" href="http://edinburghnlp.inf.ed.ac.uk/">EdinburghNLP</a></b></p><br/>
         <!-- <img class="img-circle" src="../images/jerry.jpg"> -->
-        <script>
+      </header>
+	  <!--googleon: snippet-->
+      <section id="textContainer">
+      {{ content }}
+      </section>
+      <script>
           const fadeImage = document.getElementById('fadeImage');
           const fadeContainer = document.getElementById('fadeContainer');
           const textContainer = document.getElementById('textContainer');
@@ -105,11 +110,6 @@
             fadeImage.style.opacity = fadeAmount;
           });
         </script>
-      </header>
-	  <!--googleon: snippet-->
-      <section id="textContainer">
-      {{ content }}
-      </section>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
