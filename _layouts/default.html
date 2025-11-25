@@ -70,25 +70,27 @@
             document.getElementById('emllnk').innerHTML = lnk;
         </script>
 		    <p class="link"><b><a target="_blank" href="https://scholar.google.co.uk/citations?user=vtFGk-MAAAAJ&hl=en">Google Scholar</a></b></p>
-        <p class="link">
-          <b><a target="_blank" href="./cv.txt">CV</a></b>
-          | <b><a target="_blank" href="https://www.linkedin.com/in/stangelid">LinkedIn</a></b>
-          | <b><a target="_blank" href="https://github.com/stangelid">Git</a></b>
-        </p>
-        <p class="link">
-          <b><a target="_blank" href="http://edinburghnlp.inf.ed.ac.uk/">EdinburghNLP</a></b>
-        </p>
+        <div id="techLinks" class="links1">
+          <p class="link">
+            <b><a target="_blank" href="./cv.txt">CV</a></b>
+            | <b><a target="_blank" href="https://www.linkedin.com/in/stangelid">LinkedIn</a></b>
+            | <b><a target="_blank" href="https://github.com/stangelid">Git</a></b>
+          </p>
+          <p class="link">
+            <b><a target="_blank" href="http://edinburghnlp.inf.ed.ac.uk/">EdinburghNLP</a></b>
+          </p>
+        </div>
         <br/>
-        <div class="img3">
-            <p class="link">
-              <b><a target="_blank" href="https://www.ninelivesgreece.com/">Nine Lives Greece</a></b>
-            </p>
-            <p class="link">
-              <b><a target="_blank" href="https://www.adespotologio.org.gr/">Adespotologio</a></b>
-            </p>
-            <p class="link">
-              <b><a target="_blank" href="https://www.instagram.com/adespota_exarheia/?hl=en">Adespota Exarheia</a></b>
-            </p>
+        <div id="catLinks" class="links2">
+          <p class="link">
+            <b><a target="_blank" href="https://www.ninelivesgreece.com/">Nine Lives Greece</a></b>
+          </p>
+          <p class="link">
+            <b><a target="_blank" href="https://www.adespotologio.org.gr/">Adespotologio</a></b>
+          </p>
+          <p class="link">
+            <b><a target="_blank" href="https://www.instagram.com/adespota_exarheia/?hl=en">Adespota Exarheia</a></b>
+          </p>
         </div>    
 
         <!-- <img class="img-circle" src="../images/jerry.jpg"> -->
@@ -100,6 +102,8 @@
       <script>
           const fadeImage = document.getElementById('fadeImage');
           const fadeContainer = document.getElementById('fadeContainer');
+          const techLinks = document.getElementById('techLinks');
+          const catLinks = document.getElementById('catLinks');
 
           function shouldFade() {
             return window.innerWidth > 700;
@@ -115,15 +119,14 @@
               return;
             }
 
-            const windowHeight = window.innerHeight;
-            const visibleHeight = Math.max(0, windowHeight - rect.top);
-            const fadeAmount = Math.min(1, Math.max(0, visibleHeight / rect.height));
-
             const scrollTop = window.scrollY;
             const fadeStart = 0; // start fade at top
             const fadeEnd = window.innerHeight; // fully faded in after 1 viewport height
             const opacity = Math.min(1, Math.max(0, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
+            const linkOpacity = Math.min(1, Math.max(0.5, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
             fadeImage.style.opacity = opacity;
+            techLinks.style.opacity = 1 - (linkOpacity - 0.5);
+            catLinks.style.opacity = linkOpacity;
           }
           window.addEventListener('scroll', updateFade);
           window.addEventListener('resize', updateFade); // Recalculate on resize

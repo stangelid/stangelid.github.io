@@ -39,13 +39,12 @@
   opacity: 0;
 }
 
-.img3 {
-  background-image: url("../../android-chrome-192x192.png"); /* Replace with your image */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
-  z-index: -1;
-  opacity: 0.5;
+.links1 {
+    opacity: 1;
+}
+
+.links2 {
+    opacity: 0.5;
 }
 
 .overlay {
