@@ -123,7 +123,7 @@
               const viewHeight = window.innerHeight;
               const scrollTop = window.scrollY;
               const fadeStart = 0; // start fade at top
-              const fadeEnd = Min(viewHeight, pageHeight - viewHeight); // fully faded at end of page or after scrolling 
+              const fadeEnd = Math.min(viewHeight, pageHeight - viewHeight); // fully faded at end of page or after scrolling 
                                                                         // 1 viewpoint height (whatever comes first
               const opacity = Math.min(1, Math.max(0, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
               const linkOpacity = Math.min(1, Math.max(0.5, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
