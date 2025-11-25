@@ -121,7 +121,7 @@
 
             const scrollTop = window.scrollY;
             const fadeStart = 0; // start fade at top
-            const fadeEnd = window.innerHeight; // fully faded in after 1 viewport height
+            const fadeEnd = window.innerHeight / 2; // fully faded in after 1 viewport height
             const opacity = Math.min(1, Math.max(0, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
             const linkOpacity = Math.min(1, Math.max(0.5, (scrollTop - fadeStart) / (fadeEnd - fadeStart)));
             fadeImage.style.opacity = opacity;
